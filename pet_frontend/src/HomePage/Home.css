@@ -1,0 +1,97 @@
+
+.nav-link {
+  margin: 8px;
+}
+
+.container{
+  width: 100%;
+}
+#navbarNav{
+  margin-right: 10px;
+}
+
+/* #btn-color :hover{
+  tr
+} */
+
+.image-container {
+  position: relative;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  background-color: #a58e7d
+  ; /* Green color */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.overlay-card:hover {
+  transform: translate(-50%, -50%) scale(1.05); /* Scale up the card on hover */
+}
+
+.icon {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #fdf5e2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(243, 224, 224); /* Text color */
+}
+
+.pb50 {
+  padding-bottom: 40px;
+}
+.pt50 {
+  padding-top: 40px;
+}
+.bgc-thm {
+  background-color:#7390af
+  !important;
+}
+.color-white{
+  color: rgb(243, 224, 224);
+}
+section {
+  padding: 60px 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.text-right {
+  text-align: right;
+
+}
+.custom-button {
+  background-color: #a58e7d;
+  color: #ffffff; 
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; 
+}
+
+.custom-button:hover {
+  background-color: #ffffff;
+  color: #a58e7d; 
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.1); 
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05); /* adjust the scale factor as needed */
+  transition: transform 0.2s ease; /* add smooth transition */
+}
