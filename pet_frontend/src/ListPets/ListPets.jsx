@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Row, Col, Form, Button, Alert, Modal } from "react-bootstrap";
 import Footer from '../Footer/Footer';
-import { useAuth } from '../NavBar/AuthContext';
+import { DataContext } from '../NavBar/AuthContext';
 import { Link } from 'react-router-dom';
 
 const ListPets = () => {
@@ -12,7 +12,7 @@ const ListPets = () => {
   const [buttonColor, setButtonColor] = useState("#5F7FCD");
   const [showSuccess, setShowSuccess] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All Pets");
-  const { isLogin, setIsLogin } = useAuth();
+  const { isLogin, setIsLogin } = DataContext();
   const [email, setEmail] = useState(sessionStorage.getItem("email"));
   const [formData, setFormData] = useState({
     species: "",

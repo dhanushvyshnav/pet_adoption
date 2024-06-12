@@ -3,12 +3,12 @@ import { Person } from '@mui/icons-material';
 import React from 'react';
 import { NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../NavBar/AuthContext';
+import { DataContext } from '../NavBar/AuthContext';
 import brand_logo from '../../src/assests/logo.png';
 
 
 const NavBar = () => {
-    const { isAuthenticated, logout, isLogin } = useAuth(); // Use the AuthContext
+    const { isAuthenticated, logout, isLogin } = DataContext(); // Use the AuthContext
 
     return (
         <>

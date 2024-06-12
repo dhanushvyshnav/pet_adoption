@@ -6,7 +6,7 @@ import axios from 'axios';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
 import PersonIcon from '@mui/icons-material/Person';
-import { useAuth } from '../NavBar/AuthContext';
+import { DataContext } from '../NavBar/AuthContext';
 
 const PetLogin = () => {
     const [email, setEmail] = useState('');
@@ -14,7 +14,7 @@ const PetLogin = () => {
     const [username, setUsername] = useState('');
     const [error, setError] = useState(null);
     const navigate = useNavigate();
-    const { login } = useAuth();
+    const { login } = DataContext();
 
     const handleRegister = async () => {
         if (!email || !password || !username) {
